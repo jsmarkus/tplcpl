@@ -101,6 +101,7 @@ Now
 is used to escape special characters in a variable.
 
 To show variable without escaping you should use:
+
 ```
 <%-variable%>
 ```
