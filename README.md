@@ -37,7 +37,7 @@ Jade templates must have `.jade` extension, underscore templates - `.us` extensi
 
 #### Under Windows:
 
-Windows installer coming soon. TODO!
+Download and run [tplcpl-setup.exe](https://github.com/downloads/jsmarkus/tplcpl/tplcpl-setup.exe) Windows installer
 
 TplCpl is installed to C:\tplcpl.
 
