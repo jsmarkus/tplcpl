@@ -1,0 +1,14 @@
+{
+  "name": "tplcpl",
+  "description": "Templates Compiler",
+  "version": "0.0.1",
+  "author": "Markus",
+  "repository": "git://github.com/jsmarkus/tplcpl",
+  "bin": { "tplcpl": "./app/cpl.js" },
+  "dependencies": {
+    "jade": "*",
+    "underscore": "*"
+  },
+  "engines": { "node": ">= 0.4.11" },
+  "preferGlobal":true
+}
