@@ -9,18 +9,21 @@ TplCpl compiles a whole directory of your project's templates into single JS-fil
 
 #### Under Linux:
 
-Npm package coming soon. TODO!
+Install TplCpl from npm:
 
-So for now you have to install dependencies manually:
 
 ```
-npm install jade underscore commander uglify-js
+sudo -g npm install tplcpl
+
+tplcpl --help
 ```
+
+Global (`-g`) installation is preferred to use the command line tool.
 
 Usage:
 
 ```
-path/to/tplcpl/bin/tplcpl -t path/to/templates -o path/to/templates.js -c
+tplcpl -t path/to/templates -o path/to/templates.js -c
 ```
 
 You have to pass `-t` and `-o` options - templates directory and output JS-file respectively.
