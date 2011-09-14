@@ -82,6 +82,7 @@ var inst = new MyModule;
 var h = inst.tpl('my/template.jade', {foo:'bar'});
 ```
 
-Since `tpl()` is added with `Templating.enable` templates rendering invocation are bound to object that invokes them.
+Since `tpl()` is added with `Templating.enable`, templates rendering functions are bound to the calling object.
+
 So in your jade or underscore templates you can use `this` variable referring to the object that calls `tpl()`.
 
