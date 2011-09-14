@@ -87,6 +87,24 @@ Since `tpl()` is added with `Templating.enable`, templates rendering functions a
 So in your jade or underscore templates you can use `this` variable referring to the object that calls `tpl()`.
 
 
+### Underscore extension
+
+There is a missing feature in Underscore templates - an escaping.
+
+So it is added here.
+
+Now
+
+```
+<%=variable%>
+```
+is used to escape special characters in a variable.
+
+To show variable without escaping you should use:
+```
+<%-variable%>
+```
+
 ### Collaboration
 
 I have written TplCpl for private use, so it is not a universal tool.
