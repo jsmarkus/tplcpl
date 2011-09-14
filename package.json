@@ -7,8 +7,9 @@
   "bin": { "tplcpl": "./app/cpl.js" },
   "dependencies": {
     "jade": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "commander": "*"
   },
-  "engines": { "node": ">= 0.4.11" },
+  "engines": { "node": ">= 0.4.0" },
   "preferGlobal":true
 }

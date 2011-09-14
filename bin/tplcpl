@@ -1,5 +1,5 @@
 #!/bin/sh
-HERE="$( cd -P "$( dirname "$0" )" && pwd )"
+HERE=`realpath "$( cd -P "$( dirname "$0" )" && pwd )"`
 CPL=`realpath ${HERE}/../app/cpl.js`
 export NODE_PATH=${NODE_PATH}:`realpath ${HERE}/../app`
 node $CPL $@
