@@ -79,7 +79,7 @@ console.log('OK!');
 function compress(js) {
 	var ast = jsp.parse(js);
 	ast = pro.ast_mangle(ast);
-	ast = pro.ast_lift_variables(ast);
+	//ast = pro.ast_lift_variables(ast);
 	ast = pro.ast_squeeze(ast);
 	var finalCode = pro.gen_code(ast);
 	return finalCode;

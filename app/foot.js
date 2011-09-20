@@ -18,7 +18,11 @@ var Templating = ( function (window) {
 	}
 
 	exports.enable = function (klass) {
-		klass.prototype.tpl = tplHelper;
+		if(klass.prototype) {
+			klass.prototype.tpl = tplHelper;
+		} else {
+			klass.tpl = tplHelper;
+		}
 	}
 
 	return exports;
