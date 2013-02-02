@@ -8,7 +8,8 @@
   "dependencies": {
     "jade": "*",
     "underscore": "*",
-    "commander": "*"
+    "commander": "*",
+    "uglify-js": "*"
   },
   "engines": { "node": ">= 0.4.0" },
   "preferGlobal":true
