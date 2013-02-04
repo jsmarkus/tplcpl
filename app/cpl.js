@@ -11,7 +11,7 @@ var fs = require('fs')
 require('./underscore.escape.js');
 
 programm
-	.version('0.0.1')
+	.version('0.0.4')
 	.option('-t, --templates [dir]', 'Root directory with templates')
 	.option('-o, --output [file]', 'Output JS-file')
 	.option('-c, --compress', 'Compress output with Uglify.js')
