@@ -1,7 +1,7 @@
 {
   "name": "tplcpl",
   "description": "Templates Compiler",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Markus",
   "repository": "git://github.com/jsmarkus/tplcpl",
   "bin": { "tplcpl": "./app/cpl.js" },
