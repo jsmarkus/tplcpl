@@ -11,7 +11,7 @@ var fs = require('fs')
 require('./underscore.escape.js');
 
 programm
-	.version('0.0.4')
+	.version('0.0.5')
 	.option('-t, --templates [dir]', 'Root directory with templates')
 	.option('-o, --output [file]', 'Output JS-file')
 	.option('-c, --compress', 'Compress output with Uglify.js')
@@ -116,9 +116,9 @@ function compile(fileName, source) {
 	var func,
 		code,
 		ext = fileName.split('.').pop();
-	console.log('compiling:', fileName);
 	switch (ext) {
 		case 'jade':
+			console.log('jade:      ', fileName);
 			func = jade.compile(source, {
 				filename : fileName,
 				client : true,
@@ -127,11 +127,13 @@ function compile(fileName, source) {
 		break;
 
 		case 'us':
+			console.log('underscore:', fileName);
 			func = _.template(source);
 		break;
-		
+
 		default:
-			console.log('SKIPPED unknown extension', ext);
+			console.log('skip:      ', fileName);
+			return;
 		break;
 	}
 	code = func.toString().replace('function anonymous', 'function');
